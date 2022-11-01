@@ -9,7 +9,7 @@ const [paginacion,setPaginacion]=React.useState([]);
     
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/`);
         const {results}= await res.json();
-        setPersonajes.log(results);
+        setPersonajes(results);
     
     
 } catch (error) {
