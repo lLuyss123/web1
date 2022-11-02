@@ -1,12 +1,13 @@
 
 import './App.css';
-import PeticionApi from './components/PeticionApi';
+import Pokemon from './components/Pokemon';
+
 function App() {
   return (
     <div className="App">
-      <PeticionApi/>
+      <Pokemon/>
     </div>
   );
 }
 
-export default PeticionApi;
+export default Pokemon;

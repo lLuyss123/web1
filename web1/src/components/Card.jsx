@@ -1,8 +1,8 @@
 import React from 'react'
-import {Conex_Api} from './Conex_Api'
+import {PetiApi} from './PetiApi'
 
 export const Card = ({url}) => {
-    const estado = Conex_Api(url)
+    const estado = PetiApi(url)
     const {cargando, data} = estado
 
     return (
@@ -17,10 +17,10 @@ export const Card = ({url}) => {
                         <h5>{data.id}</h5>
                     </div>
                     <div>
-                        <img src={data.sprites.front_default} alt='pokemon'/>
+                    <p className='nombres-p'>{data.forms[0].name}</p>
                     </div>
-                    <div>
-                        <p className='nombres-p'>{data.forms[0].name}</p>
+                    <div class='blob'>
+                        <img src={data.sprites.front_default} alt='pokemon'/>
                     </div>
                 </div>
             }
